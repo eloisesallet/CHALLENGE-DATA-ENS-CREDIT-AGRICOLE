@@ -1,6 +1,4 @@
-# CHALLENGE-DATA-ENS-CREDIT-AGRICOLE
-
-# 📑 Challenge Data ENS — AssurPrime (Crédit Agricole Assurances)
+# Challenge Data ENS — AssurPrime (Crédit Agricole Assurances)
 
 Projet de prédiction de la **prime pure liée au risque incendie** pour des contrats multirisques agricoles dans le cadre du Challenge Data ENS.
 
@@ -8,7 +6,7 @@ Projet de prédiction de la **prime pure liée au risque incendie** pour des con
 
 ---
 
-## 🎯 Objectif & Défi
+## Objectif & Défi
 
 * **Variable cible (`CHARGE`) :** $\text{Fréquence} \times \text{Coût moyen} \times \text{Exposition}$
 * **Données :** 383 610 contrats et 374 variables (bâtiments, cultures, météo, capitaux...)
@@ -16,7 +14,7 @@ Projet de prédiction de la **prime pure liée au risque incendie** pour des con
 
 ---
 
-## 🏆 Résultats & Démarche
+## Résultats & Démarche
 
 Plusieurs modèles de Machine Learning et Deep Learning ont été évalués avec la métrique **RMSE** :
 
@@ -30,21 +28,21 @@ Plusieurs modèles de Machine Learning et Deep Learning ont été évalués avec
 
 ---
 
-## ⚖️ Équité (Disparate Impact)
+## Équité (Disparate Impact)
 
 Analyse du **Disparate Impact (DI)** sur la variable `ACTIVIT2` (type d'activité) :
 * Les écarts observés (ex. `ACT8` à $0.757$) s'expliquent par un **risque incendie réellement plus élevé** (stockage de foin, céréales...) et non par un biais du modèle.
 
 ---
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 * **Langage :** Python 3.13
 * **Librairies :** `lightgbm`, `tensorflow`, `ctgan`, `scikit-learn`, `pandas`
 
 ---
 
-## 📂 Fichiers du dépôt
+## Fichiers du dépôt
 
 * `notebook_cros_sallet.ipynb` : Code source complet et modélisations.
 * `rapport_ter_cros_sallet.pdf` : Rapport d'analyse détaillé.
